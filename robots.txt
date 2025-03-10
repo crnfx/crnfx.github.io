@@ -1,0 +1,45 @@
+User-agent: *
+
+Disallow: /lists
+Disallow: /phpmailer
+Disallow: /products
+Allow: /css
+Allow: /fonts
+Allow: /img
+Allow: /js
+Allow: index.html
+
+User-agent: Yandex
+
+Disallow: /lists
+Disallow: /phpmailer
+Disallow: /products
+Allow: /css
+Allow: /fonts
+Allow: /img
+Allow: /js
+Allow: index.html
+
+User-agent: Googlebot
+
+Disallow: /lists
+Disallow: /phpmailer
+Disallow: /products
+Allow: /css
+Allow: /fonts
+Allow: /img
+Allow: /js
+Allow: index.html
+
+User-agent: Google
+
+Disallow: /lists
+Disallow: /phpmailer
+Disallow: /products
+Allow: /css
+Allow: /fonts
+Allow: /img
+Allow: /js
+Allow: index.html
+
+

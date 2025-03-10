@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(93289968, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/93289968" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <title>Кондейкин</title>
+</head>
+
+<body>
+    <header class="header" style="margin-bottom: 25px;">
+        <div class="container">
+            <div class="header__wrapper flex">
+                <a href="../index.html" class="header__logo">
+                    <img src="../img/Logo.png" alt="Логотип Кондейкин">
+                </a>
+                <nav class="header__nav">
+                    <ul class="list-reset header__list flex">
+                        <li class="header__item"><a href="../lists/catalogue.html" class="header__link">Каталог</a></li>
+                        <li class="header__item"><a href="../lists/price.html" class="header__link">Услуги</a></li>
+                        <li class="header__item"><a href="../lists/service.html" class="header__link">Сервис</a></li>
+                        <li class="header__item"><a href="../lists/jobs.html" class="header__link">Наши работы</a></li>
+                        <li class="header__item"><a href="#contacts" class="header__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__connection flex">
+                    <a href="tel:+79936369493" class="header__phone">+7 (993) 636-94-93</a>
+                    <span class="header__schedule">пн-пт 09:00-18:00</span>
+                </div>
+            </div>
+            <div class="header__wrapper header__wrapper--tablet flex">
+                <a href="../index.html" class="header__logo">
+                    <img src="../img/Logo.png" alt="Логотип Кондейкин">
+                </a>
+                <div class="header__inner--tablet flex">
+                    <div class="header__burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="list-reset header__list flex" id="tablet-navigation">
+                            <li class="header__item"><a href="../lists/catalogue.html" class="header__link">Каталог</a>
+                            </li>
+                            <li class="header__item"><a href="../lists/price.html" class="header__link">Услуги</a></li>
+                            <li class="header__item"><a href="../lists/service.html" class="header__link">Сервис</a>
+                            </li>
+                            <li class="header__item"><a href="../lists/jobs.html" class="header__link">Наши работы</a>
+                            </li>
+                            <li class="header__item"><a href="#contacts" class="header__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__connection flex">
+                        <a href="tel:+79936369493" class="header__phone">+7 (993) 636-94-93</a>
+                        <span class="header__schedule">пн-пт 09:00-18:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="catalogue" id="catalogue">
+            <div class="container">
+                <h2 class="catalogue__title">Каталог</h2>
+                <div class="catalogue__wrapper flex">
+                    <div class="catalogue__btns flex">
+                        <a href="#conditioners"
+                            class="catalogue__conditioner--btn animate__animated animate__backInLeft"
+                            aria-label="Ссылка на каталог кондиционеров"></a>
+                        <a href="#ventilation"
+                            class="catalogue__ventilation--btn animate__animated animate__backInRight"
+                            aria-label="Ссылка на каталог вентиляций"></a>
+                    </div>
+                </div>
+                <div class="catalogue__products">
+                    <!--Кондиционеры (продукт + аккордион)-->
+                    <div class="catalogue__conditioners flex" id="conditioners">
+
+                        <article id="fujitsu-genios" class="catalogue__product conditioner conditioner--active"
+                            data-target="FujitsuGenios">
+                            <div class="swiper mySwiper catalogue__swiper">
+                                <ul class="list-reset swiper-wrapper">
+                                    <li class="swiper-slide catalogue__image"><img src="../img/fujitsu-genios-front.png"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/fujitsu-genios-back.png"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/fujitsu-remote.png"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                </ul>
+                                <div class="swiper-pagination catalogue__pagination"></div>
+                            </div>
+                            <div class="catalogue__content">
+                                <h3 class="catalogue__subtitle">
+                                    ИНВЕРТОРНЫЕ СПЛИТ-СИСТЕМЫ FUJITSU GENIOS
+                                </h3>
+                                <ul class="list-reset catalogue__list">
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/fujitsu07.html" target="_blank">ASYG07KMCC/
+                                                AOYG07KMCC</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>20 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 110 040 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="ASYG07KMCC/ AOYG07KMCC"
+                                                data-price="110 040 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name"><a href="../products/fujitsu09.html"
+                                                target="_blank">ASYG09KMCC/ AOYG09KMCC</a></h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>25 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                НЕТ В НАЛИЧИИ
+                                            </span>
+                                        </div>
+
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/fujitsu12.html" target="_blank">ASYG12KMCC/
+                                                AOYG12KMCC</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>35 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 133 710 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="ASYG12KMCC/ AOYG12KMCC"
+                                                data-price="133 710 Р">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/fujitsu14.html" target="_blank">ASYG14KMCC/
+                                                AOYG14KMCC</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>40 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 177 110 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="ASYG14KMCC/ AOYG14KMCC"
+                                                data-price="177 110 Р">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/fujitsu18.html" target="_blank">ASYG18KMTA/
+                                                AOYG18KMTA</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>50 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                НЕТ В НАЛИЧИИ
+                                            </span>
+                                        </div>
+
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/fujitsu24.html" target="_blank">ASYG24KMTA/
+                                                AOYG24KMTA</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>70 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                НЕТ В НАЛИЧИИ
+                                            </span>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="lyra-interverter" class="catalogue__product conditioner"
+                            data-target="LyraInterverter">
+                            <div class="swiper mySwiper catalogue__swiper">
+                                <ul class="list-reset swiper-wrapper">
+                                    <li class="swiper-slide catalogue__image"><img
+                                            src="../img/LyraInterverterR32Front.png" loading="lazy" alt="Кондиционер">
+                                    </li>
+                                    <li class="swiper-slide catalogue__image"><img
+                                            src="../img/LyraInterverterR32Back.jpg" loading="lazy" alt="Кондиционер">
+                                    </li>
+                                    <li class="swiper-slide catalogue__image"><img loading="lazy"
+                                            src="../img/LyraInterverterR32remote.jpg" alt="Кондиционер"></li>
+                                </ul>
+                                <div class="swiper-pagination catalogue__pagination"></div>
+                            </div>
+                            <div class="catalogue__content">
+                                <h3 class="catalogue__subtitle">
+                                    <a href="#">ИНВЕРТОРНЫЕ СПЛИТ-СИСТЕМЫ TOSOT LYRA INVERTER R32</a>
+                                </h3>
+                                <ul class="list-reset catalogue__list">
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/lira-inverter07.html"
+                                                target="_blank">T07H-SLyR2/I/T07H-SLyR2/O</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>24 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 43 820 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="T07H-SLyR2/I/T07H-SLyR2/O"
+                                                data-price="43 820 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/lira-inverter09.html"
+                                                target="_blank">T09H-SLYR2/I/T09H-SLYR2/O</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>27 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 47 040 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="T09H-SLYR2/I/T09H-SLYR2/O"
+                                                data-price="47 040 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/lira-inverter12.html"
+                                                target="_blank">T12H-SLYR2/I/T12H-SLYR2/O</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>35 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 52 930 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="T12H-SLYR2/I/T12H-SLYR2/O"
+                                                data-price="52 930 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/lira-inverter18.html"
+                                                target="_blank">T18H-SLYR2/I/T18H-SLYR2/O</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>46 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 81 110 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="T18H-SLYR2/I/T18H-SLYR2/O"
+                                                data-price="81 110 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/lira-inverter24.html"
+                                                target="_blank">T24H-SLYR2/I/T24H-SLYR2/O</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>62 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 102 750 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="T24H-SLYR2/I/T24H-SLYR2/O"
+                                                data-price="102 750 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="lyra-split" class="catalogue__product conditioner" data-target="LyraSplit">
+                            <div class="swiper mySwiper catalogue__swiper">
+                                <ul class="list-reset swiper-wrapper">
+                                    <li class="swiper-slide catalogue__image"><img src="../img/LyraSplitFront.png"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                    <li class="swiper-slide catalogue__image"><img
+                                            src="../img/LyraInterverterR32Back.jpg" loading="lazy" alt="Кондиционер">
+                                    </li>
+                                    <li class="swiper-slide catalogue__image"><img loading="lazy"
+                                            src="../img/LyraInterverterR32remote.jpg" alt="Кондиционер"></li>
+                                </ul>
+                                <div class="swiper-pagination catalogue__pagination"></div>
+                            </div>
+                            <div class="catalogue__content">
+                                <h3 class="catalogue__subtitle">
+                                    <a href="#">СПЛИТ-СИСТЕМЫ TOSOT NATAL 2021</a>
+                                </h3>
+                                <ul class="list-reset catalogue__list">
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/natal07.html"
+                                                target="_blank">T07H-SNN2/I/T07H-SNN2/O</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>23 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 32 000 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="T07H-SNN2/I/T07H-SNN2/O"
+                                                data-price="32 000 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/natal09.html"
+                                                target="_blank">T09H-SNN2/I/T09H-SNN2/O</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>26 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 34 800 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="T09H-SNN2/I/T09H-SNN2/O"
+                                                data-price="34 800 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/natal12.html"
+                                                target="_blank">T12H-SNN2/I/T12H-SNN2/O</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>33 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 40 930 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="T12H-SNN2/I/T12H-SNN2/O"
+                                                data-price="40 930 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/natal18.html"
+                                                target="_blank">T18H-SNN2/I/T18H-SNN2/O</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>48 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 64 390 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="T18H-SNN2/I/T18H-SNN2/O"
+                                                data-price="64 390 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/natal24.html"
+                                                target="_blank">T24H-SNN2/I/T24H-SNN2/O</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>62 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 82 180 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="T24H-SNN2/I/T24H-SNN2/O"
+                                                data-price="82 180 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/natal28.html"
+                                                target="_blank">T28H-SNN2/I/T28H-SNN2/O</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>85 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 117 110 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="T28H-SNN2/I/T28H-SNN2/O"
+                                                data-price="117 110 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/natal36.html" target="_blank">T36H-SNA/I/T36H-SNA/O</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>95 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 158 890 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="T36H-SNA/I/T36H-SNA/O"
+                                                data-price="158 890 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="lessar-interverter" class="catalogue__product conditioner"
+                            data-target="LessarInterverter">
+                            <div class="swiper mySwiper catalogue__swiper">
+                                <ul class="list-reset swiper-wrapper">
+                                    <li class="swiper-slide catalogue__image"><img src="../img/LessarInvertFront.png"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/LessarInvertBack.jpg"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/LessarInvertRemote.jpg"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                </ul>
+                                <div class="swiper-pagination catalogue__pagination"></div>
+                            </div>
+                            <div class="catalogue__content">
+                                <h3 class="catalogue__subtitle">
+                                    <a href="#">ИНВЕРТОРНЫЕ СПЛИТ-СИСТЕМЫ LESSAR FLEXCOOL 2022</a>
+                                </h3>
+                                <ul class="list-reset catalogue__list">
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/flexcool09.html"
+                                                target="_blank">LS-HE09KCE2/LU-HE09KCE2</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>26 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 46 180 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LS-HE09KCE2/LU-HE09KCE2"
+                                                data-price="46 180 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/flexcool12.html"
+                                                target="_blank">LS-HE12KCE2/LU-HE12KCE2</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>35 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 51 860 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LS-HE12KCE2/LU-HE12KCE2"
+                                                data-price="51 860 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/flexcool18.html"
+                                                target="_blank">LS-HE18KCE2/LU-HE18KCE2</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>53 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 76 550 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LS-HE18KCE2/LU-HE18KCE2"
+                                                data-price="76 550 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/flexcool24.html"
+                                                target="_blank">LS-HE24KCE2/LU-HE24KCE2</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>70 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 98 700 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LS-HE24KCE2/LU-HE24KCE2"
+                                                data-price="98 700 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="lessar-split" class="catalogue__product conditioner" data-target="LessarSplit">
+                            <div class="swiper mySwiper catalogue__swiper">
+                                <ul class="list-reset swiper-wrapper">
+                                    <li class="swiper-slide catalogue__image"><img src="../img/LessarSplitFront.png"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/LessarSplitBack.jpg"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/LessarSplitRemote.jpg"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                </ul>
+                                <div class="swiper-pagination catalogue__pagination"></div>
+                            </div>
+                            <div class="catalogue__content">
+                                <h3 class="catalogue__subtitle">
+                                    <a href="#">СПЛИТ-СИСТЕМА LESSAR COOL+ R32</a>
+                                </h3>
+                                <ul class="list-reset catalogue__list">
+
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/cool07.html" target="_blank">LS-H07KFE2/LU-H07KFE2</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>21 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 28 900 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LS-H07KFE2/LU-H07KFE2"
+                                                data-price="28 900 Р">Заказать</button>
+                                        </div>
+                                    </li>
+
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/cool09.html" target="_blank">LS-H09KFE2/LU-H09KFE2</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>26 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 30 900 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LS-H09KFE2/LU-H09KFE2"
+                                                data-price="30 900 Р">Заказать</button>
+                                        </div>
+                                    </li>
+
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/cool12.html" target="_blank">LS-H12KFE2/LU-H12KFE2</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>35 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 38 800 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LS-H12KFE2/LU-H12KFE2"
+                                                data-price="38 800 Р">Заказать</button>
+                                        </div>
+                                    </li>
+
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/cool18.html" target="_blank">LS-H18KFE2/LU-H18KFE2</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>53 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 60 800 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LS-H18KFE2/LU-H18KFE2"
+                                                data-price="60 800 Р">Заказать</button>
+                                        </div>
+                                    </li>
+
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/cool24.html" target="_blank">LS-H24KFE2/LU-H24KFE2</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>70 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 79 900 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LS-H24KFE2/LU-H24KFE2"
+                                                data-price="79 900 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="quattroclima-interverter" class="catalogue__product conditioner"
+                            data-target="QuattroclimaInterverter">
+                            <div class="swiper mySwiper catalogue__swiper">
+                                <ul class="list-reset swiper-wrapper">
+                                    <li class="swiper-slide catalogue__image"><img src="../img/quattroinvertorfront.png"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/quattroinvertback.png"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/quattroinvertremote.png"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                </ul>
+                                <div class="swiper-pagination catalogue__pagination"></div>
+                            </div>
+                            <div class="catalogue__content">
+                                <h3 class="catalogue__subtitle">
+                                    <a href="#">ИНВЕРТОРНЫЕ СПЛИТ-СИСТЕМЫ QUATTROCLIMA VERONA</a>
+                                </h3>
+                                <ul class="list-reset catalogue__list">
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/quattroverona09.html"
+                                                target="_blank">QV-VE09WAE/QN-VE09WAE</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>26 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 36 300 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="QV-VE09WAE/QN-VE09WAE"
+                                                data-price="36 300 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/quattroverona12.html"
+                                                target="_blank">QV-VE12WAE/QN-VE12WAE</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>34 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 40 900 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="QV-VE12WAE/QN-VE12WAE"
+                                                data-price="40 900 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/quattroverona18.html"
+                                                target="_blank">QV-VE18WAE/QN-VE18WAE</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>51 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 66 200 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="QV-VE18WAE/QN-VE18WAE"
+                                                data-price="66 200 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/quattroverona24.html"
+                                                target="_blank">QV-VE24WAE/QN-VE24WAE</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>68 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 84 700 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="QV-VE24WAE/QN-VE24WAE"
+                                                data-price="84 700 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="quattroclima-split" class="catalogue__product conditioner"
+                            data-target="QuattroclimaSplit">
+                            <div class="swiper mySwiper catalogue__swiper">
+                                <ul class="list-reset swiper-wrapper">
+                                    <li class="swiper-slide catalogue__image"><img src="../img/quattroinvertorfront.png"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/quattroinvertback.png"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/quattroinvertremote.png"
+                                            loading="lazy" alt="Кондиционер"></li>
+                                </ul>
+                                <div class="swiper-pagination catalogue__pagination"></div>
+                            </div>
+                            <div class="catalogue__content">
+                                <h3 class="catalogue__subtitle">
+                                    <a href="#">СПЛИТ-СИСТЕМЫ QUATTROCLIMA BERGAMO</a>
+                                </h3>
+                                <ul class="list-reset catalogue__list">
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/quattrobergamo07.html"
+                                                target="_blank">QV-BE07WB/QN-BE07WB</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>22 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 24 800 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="QV-BE07WB/QN-BE07WB" data-price="24 800 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/quattrobergamo09.html"
+                                                target="_blank">QV-BE09WB/QN-BE09WB</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>26 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 26 600 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="QV-BE09WB/QN-BE09WB" data-price="26 600 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/quattrobergamo12.html"
+                                                target="_blank">QV-BE12WA/QN-BE12WA</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>35 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                НЕТ В НАЛИЧИИ
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/quattrobergamo12new.html"
+                                                target="_blank">QV-BE12WB/QN-BE12WB</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>35 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 33 500 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="QV-BE12WB/QN-BE12WB" data-price="33 500 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/quattrobergamo18.html"
+                                                target="_blank">QV-BE18WA/QN-BE18WA</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>53 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                НЕТ В НАЛИЧИИ
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/quattrobergamo18new.html"
+                                                target="_blank">QV-BE18WB/QN-BE18WB</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>53 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 55 400 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="QV-BE18WB/QN-BE18WB" data-price="55 400 Р">Заказать</button>
+                                        </div>
+                                    </li>
+
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/quattrobergamo24.html"
+                                                target="_blank">QV-BE24WB/QN-BE24WB</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>70 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 67 800 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="QV-BE24WB/QN-BE24WB" data-price="67 800 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <div class="catalogue__accordion">
+                            <div class="fujitsu-cond">
+                                <button class="catalogue__trigger"><img src="../img/fujitsu.png" loading="lazy"
+                                        alt="Логотип Fujitsu"></button>
+                                <div class="catalogue__panel">
+                                    <h3 class="catalogue__system">Инверторные сплит-системы:</h3>
+                                    <a href="#fujitsu-genios"
+                                        class="catalogue__choose catalogue__conditioner--nav catalogue--conditioner__nav--active"
+                                        data-path="FujitsuGenios">Fujitsu Genios</a>
+                                </div>
+                            </div>
+
+                            <div class="tosot-cond"><button class="catalogue__trigger"><img src="../img/tosot.png"
+                                        loading="lazy" alt="Логотип Tosot"></button>
+                                <div class="catalogue__panel">
+                                    <h3 class="catalogue__system">Инверторные сплит-системы:</h3>
+                                    <a href="#lyra-interverter" class="catalogue__choose catalogue__conditioner--nav"
+                                        data-path="LyraInterverter">Tosot Lyra Inverter R32</a>
+                                    <h3 class="catalogue__system">Сплит-системы:</h3>
+                                    <a href="#lyra-split" class="catalogue__choose catalogue__conditioner--nav"
+                                        data-path="LyraSplit">Tosot Natal 2021</a>
+                                </div>
+                            </div>
+
+                            <div class="lessar-cond"><button class="catalogue__trigger"><img src="../img/lessar.png"
+                                        loading="lazy" alt="Логотип Lessar"></button>
+                                <div class="catalogue__panel">
+                                    <h3 class="catalogue__system">Инверторные сплит-системы:</h3>
+                                    <a href="#lessar-interverter" class="catalogue__choose catalogue__conditioner--nav"
+                                        data-path="LessarInterverter">LESSAR FLEXCOOL 2022</a>
+                                    <h3 class="catalogue__system">Сплит-системы:</h3>
+                                    <a href="#lessar-split" class="catalogue__choose catalogue__conditioner--nav"
+                                        data-path="LessarSplit">LESSAR COOL+ R32</a>
+                                </div>
+                            </div>
+
+                            <div class="quattroclima-cond"><button class="catalogue__trigger"><img
+                                        src="../img/quattroclima.png" loading="lazy" alt="Логотип Lessar"></button>
+                                <div class="catalogue__panel">
+                                    <h3 class="catalogue__system">Инверторные сплит-системы:</h3>
+                                    <a href="#quattroclima-interverter"
+                                        class="catalogue__choose catalogue__conditioner--nav"
+                                        data-path="QuattroclimaInterverter">QUATTROCLIMA VERONA</a>
+                                    <h3 class="catalogue__system">Сплит-системы:</h3>
+                                    <a href="#quattroclima-split" class="catalogue__choose catalogue__conditioner--nav"
+                                        data-path="QuattroclimaSplit">QUATTROCLIMA BERGAMO
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <!--Вентиляция (продукт + аккордион)-->
+                    <div class="catalogue__ventilation flex" id="ventilation">
+
+                        <article id="lessar-ventilation" class="catalogue__product ventilation ventilation--active"
+                            data-target="LessarVentilation">
+                            <div class="swiper mySwiper catalogue__swiper">
+                                <ul class="list-reset swiper-wrapper">
+                                    <li class="swiper-slide catalogue__image"><img src="../img/LessarVentilation.png"
+                                            loading="lazy" alt="Вентиляция"></li>
+                                </ul>
+                                <div class="swiper-pagination catalogue__pagination"></div>
+                            </div>
+                            <div class="catalogue__content">
+                                <h3 class="catalogue__subtitle">
+                                    <a href="#">Компактная вентиляционная установка Lessar</a>
+                                </h3>
+                                <ul class="list-reset catalogue__list">
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/vent250.html" target="_blank">LV-PACU-250-P-AC-E50</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>250 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 62 478 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LV-PACU-250-P-AC-E50"
+                                                data-price="62 478 Р">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/vent400.html" target="_blank">LV-PACU-400-P-AC-E50</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>400 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 79 095 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LV-PACU-400-P-AC-E50"
+                                                data-price="79 095 Р">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/vent600.html" target="_blank">LV-PACU-600-P-AC-E50</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>600 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 98 401 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LV-PACU-600-P-AC-E50"
+                                                data-price="98 401 Р">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/vent800.html" target="_blank">LV-PACU-800-P-AC-E50</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>800 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 121 454 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LV-PACU-800-P-AC-E50"
+                                                data-price="121 454 Р">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/vent1000.html"
+                                                target="_blank">LV-PACU-1000-P-AC-E50</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>1000 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 154 688 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LV-PACU-1000-P-AC-E50"
+                                                data-price="154 688 Р">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/vent1200.html"
+                                                target="_blank">LV-PACU-1200-P-AC-E50</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>1200 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: 157 621 Р
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="LV-PACU-1200-P-AC-E50"
+                                                data-price="157 621 Р">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="soffio-primo" class="catalogue__product ventilation" data-target="SoffioPrimo">
+                            <div class="swiper mySwiper catalogue__swiper">
+                                <ul class="list-reset swiper-wrapper">
+                                    <li class="swiper-slide catalogue__image"><img src="../img/SoffioPrimo.png"
+                                            loading="lazy" alt="Вентиляция"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/SofioRemote.png"
+                                            loading="lazy" alt="Вентиляция"></li>
+                                </ul>
+                                <div class="swiper-pagination catalogue__pagination"></div>
+                            </div>
+                            <div class="catalogue__content">
+                                <h3 class="catalogue__subtitle">
+                                    <a href="#">Soffio Primo</a>
+                                </h3>
+                                <ul class="list-reset catalogue__list">
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/primo250.html" target="_blank">RCS-250-P</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>230 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: По запросу
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="RCS-250-P" data-price="Цена: По запросу">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/primo350.html" target="_blank">RCS-350-P</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>350 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: По запросу
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="RCS-350-P" data-price="Цена: По запросу">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/primo500.html" target="_blank">RCS-500-P</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>500 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: По запросу
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="RCS-500-P" data-price="Цена: По запросу">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/primo650.html" target="_blank">RCS-650-P</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>650 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: По запросу
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="RCS-650-P" data-price="Цена: По запросу">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/primo1200.html" target="_blank">RCS-1200-P</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>1200 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: По запросу
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="RCS-1200-P" data-price="Цена: По запросу">Заказать</button>
+                                        </div>
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/primo1600.html" target="_blank">RCS-1600-P</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>1650 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: По запросу
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="RCS-1600-P" data-price="Цена: По запросу ">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="vento" class="catalogue__product ventilation" data-target="Vento">
+                            <div class="swiper mySwiper catalogue__swiper">
+                                <ul class="list-reset swiper-wrapper">
+                                    <li class="swiper-slide catalogue__image"><img src="../img/VentoVentilation.png"
+                                            loading="lazy" alt="Вентиляция"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/VentoRemote.png"
+                                            loading="lazy" alt="Вентиляция"></li>
+                                </ul>
+                                <div class="swiper-pagination catalogue__pagination"></div>
+                            </div>
+                            <div class="catalogue__content">
+                                <h3 class="catalogue__subtitle">
+                                    <a href="#">Vento</a>
+                                </h3>
+                                <ul class="list-reset catalogue__list">
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/vento500.html" target="_blank">RCV-500</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>500 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: По запросу
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="RCV-500" data-price="Цена: По запросу ">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/vento900.html" target="_blank">RCV-900</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Производительность <strong>900 </strong>м<sup>3</sup>/ч
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: По запросу
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="RCV-900" data-price="Цена: По запросу ">Заказать</button>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="brezza" class="catalogue__product ventilation" data-target="Brezza">
+                            <div class="swiper mySwiper catalogue__swiper">
+                                <ul class="list-reset swiper-wrapper">
+                                    <li class="swiper-slide catalogue__image"><img src="../img/brezza-front.png"
+                                            loading="lazy" alt="Вентиляция"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/brezza-left.png"
+                                            loading="lazy" alt="Вентиляция"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/brezza-remote.png"
+                                            loading="lazy" alt="Вентиляция"></li>
+                                </ul>
+                                <div class="swiper-pagination catalogue__pagination"></div>
+                            </div>
+                            <div class="catalogue__content">
+                                <h3 class="catalogue__subtitle">
+                                    <a href="#">Brezza</a>
+                                </h3>
+                                <ul class="list-reset catalogue__list">
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/brezza.html" target="_blank">RCB 150 LUX</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>75 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: По запросу
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="RCB 150 LUX"
+                                                data-price="Цена: По запросу ">Заказать</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="brezzaxs" class="catalogue__product ventilation" data-target="Brezzaxs">
+                            <div class="swiper mySwiper catalogue__swiper">
+                                <ul class="list-reset swiper-wrapper">
+                                    <li class="swiper-slide catalogue__image"><img src="../img/brezzaxs-front.png"
+                                            loading="lazy" alt="Вентиляция"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/brezzaxs-left.png"
+                                            loading="lazy" alt="Вентиляция"></li>
+                                    <li class="swiper-slide catalogue__image"><img src="../img/brezzaxs-remote.png"
+                                            loading="lazy" alt="Вентиляция"></li>
+                                </ul>
+                                <div class="swiper-pagination catalogue__pagination"></div>
+                            </div>
+                            <div class="catalogue__content">
+                                <h3 class="catalogue__subtitle">
+                                    <a href="#">Brezza XS</a>
+                                </h3>
+                                <ul class="list-reset catalogue__list">
+                                    <li class="catalogue__item flex">
+                                        <h4 class="catalogue__name">
+                                            <a href="../products/brezzaxs.html" target="_blank">RCB 75</a>
+                                        </h4>
+                                        <div class="catalogue__info flex">
+                                            <span class="catalogue__square">
+                                                Максимальная площадь до: <strong>37 </strong>м<sup>2</sup>
+                                            </span>
+                                            <span class="catalogue__price">
+                                                Цена: По запросу
+                                            </span>
+                                            <button class="btn-reset catalogue__btn" data-path="order-form"
+                                                data-model="RCB 75" data-price="Цена: По запросу ">Заказать</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <div class="catalogue__accordion">
+                            <div class="lessar-vent">
+                                <button class="catalogue__trigger"><img src="../img/lessar.png" loading="lazy"
+                                        alt="Логотип Lessar"></button>
+                                <div class="catalogue__panel">
+                                    <h3 class="catalogue__system">Компактные вентиляционные установки:</h3>
+                                    <a href="#lessar-ventilation"
+                                        class="catalogue__choose catalogue__ventilation--nav catalogue--ventilation__nav--active"
+                                        data-path="LessarVentilation">Lessar ventilation</a>
+                                </div>
+                            </div>
+
+                            <div class="royal-vent">
+                                <button class="catalogue__trigger"><img src="../img/royal-logo.png" loading="lazy"
+                                        alt="Логотип Royal"></button>
+                                <div class="catalogue__panel">
+                                    <h3 class="catalogue__system">Компактные вентиляционные установки:</h3>
+                                    <a href="#soffio-primo" class="catalogue__choose catalogue__ventilation--nav"
+                                        style="display: block;" data-path="SoffioPrimo">Soffio Primo</a>
+                                    <a href="#vento" class="catalogue__choose catalogue__ventilation--nav"
+                                        data-path="Vento">Vento</a>
+                                    <h3 class="catalogue__system">Приточно-очистительный комплекс:</h3>
+                                    <a href="#brezza" class="catalogue__choose catalogue__ventilation--nav"
+                                        style="display: block;" data-path="Brezza">BREZZA</a>
+                                    <a href="#brezzaxs" class="catalogue__choose catalogue__ventilation--nav"
+                                        data-path="Brezzaxs">BREZZA XS</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="catalogue__modal">
+                    <div class="catalogue__overlay">
+                        <div class="catalogue__modal--form flex" data-target="order-form">
+                            <form action="#" class="catalogue__form flex" id="order-form">
+                                <label for="product" class="catalogue__label">
+                                    <input name="product" type="text" class="catalogue__input product-name" readonly>
+                                </label>
+                                <label for="name" class="catalogue__label">
+                                    <input name="name" type="text" placeholder="Имя*"
+                                        class="catalogue__input input-name">
+                                </label>
+                                <label for="tel" class="catalogue__label">
+                                    <input name="tel" type="tel" placeholder="Ваш телефон*"
+                                        class="catalogue__input input-tel">
+                                </label>
+                                <label for="price" class="catalogue__label">
+                                    <input name="price" type="text" class="catalogue__input product-price" readonly>
+                                </label>
+                                <button class="btn-reset catalogue__submit" type="submit">Заказать</button>
+                                <span>Нажимая на кнопку «Заказать», вы даёте согласие на обработку<br> <a
+                                        href="http://www.kremlin.ru/acts/bank/24154">персональных
+                                        данных</a></span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__modal--success flex">
+                    <div class="hero__overlay--success">
+                        <div class="hero__modal--success__content">
+                            <img class="hero__modal--img" src="../img/check-circle-fill.svg" alt="Success">
+                            <p class="hero__modal--descr">Ваша заявка принята!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer__wrapper flex">
+                <div class="footer__inner flex">
+                    <a href="index.html" class="footer__logo">
+                        <img src="../img/Logo.png" alt="Логотип Кондейкин">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="list-reset footer__nav--list">
+                            <li class="footer__nav--item">
+                                <a href="../lists/catalogue.html" class="footer__nav--link">Каталог</a>
+                            </li>
+                            <li class="footer__nav--item">
+                                <a href="../lists/price.html" class="footer__nav--link">Услуги</a>
+                            </li>
+                            <li class="footer__nav--item">
+                                <a href="../lists/service.html" class="footer__nav--link">Сервис</a>
+                            </li>
+                            <li class="footer__nav--item">
+                                <a href="../lists/jobs.html" class="footer__nav--link">Наши работы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <form action="#" method="POST" enctype="multipart/form-data" class="footer__form flex" id="footer-form">
+                    <label for="name" class="footer__label">
+                        <input class="footer__input footer-name" type="text" name="name"
+                            placeholder="Введите Ваше имя*">
+                    </label>
+                    <label for="tel" class="footer__label">
+                        <input class="footer__input footer-tel" type="tel" name="tel"
+                            placeholder="Введите Ваш телефон*">
+                    </label>
+                    <label for="mail" class="footer__label">
+                        <input class="footer__input footer-mail" type="text" name="mail"
+                            placeholder="Введите Ваш email*">
+                    </label>
+                    <label for="text" class="hero__label">
+                        <textarea name="text" cols="10" rows="2" class="hero__input footer-text" type="text"
+                            data-validate-field="text" placeholder="Введите интересующий Вас вопрос*"></textarea>
+                    </label>
+                    <div class="footer__agreement flex">
+                        <button class="btn-reset footer__btn" type="submit">Заказать обратный звонок</button>
+                        <span>Нажимая на кнопку «Заказать обратный звонок», вы даёте согласие на обработку<br> <a
+                                href="http://www.kremlin.ru/acts/bank/24154">персональных
+                                данных</a></span>
+                    </div>
+                </form>
+                <div class="footer__connect">
+                    <h3 class="footer__subtitle">
+                        Связаться в один клик
+                    </h3>
+                    <a href="https://api.whatsapp.com/send?phone=79936369493" target="_blank"
+                        class="footer__whatsapp"><svg width="40" height="40" viewbox="0 0 40 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_191243_648)">
+                                <path
+                                    d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
+                                    fill="#30BF39"></path>
+                                <path
+                                    d="M25.875 21.751C25.625 21.626 24.3125 20.876 24.0625 20.8135C23.8125 20.6885 23.625 20.6885 23.4375 20.9385C23.25 21.1885 22.6875 21.8135 22.5625 21.9385C22.375 22.126 22.25 22.126 22 22.001C21.75 21.876 20.875 21.5635 19.875 20.5635C19.125 19.8135 18.5625 18.9385 18.4375 18.626C18.3125 18.376 18.4375 18.1885 18.5625 18.0635C18.6875 17.9385 18.8125 17.751 19 17.626C19.1875 17.501 19.1875 17.376 19.3125 17.1885C19.4375 17.001 19.375 16.876 19.3125 16.6885C19.25 16.501 18.75 15.1885 18.5625 14.626C18.375 14.0635 18.125 14.1885 18 14.126C17.8125 14.126 17.6875 14.0635 17.5 14.0635C17.25 14.0635 16.9375 14.1885 16.75 14.376C16.5 14.626 15.75 15.251 15.75 16.5635C15.75 17.876 16.625 19.251 16.75 19.376C16.875 19.5635 18.5 22.4385 21.1875 23.626C23.875 24.8135 23.875 24.4385 24.375 24.4385C24.875 24.4385 26 23.8135 26.25 23.251C26.5 22.626 26.5 22.0635 26.4375 22.001C26.3125 22.001 26.125 21.9385 25.875 21.751ZM20.875 28.1885C19.125 28.1885 17.5 27.6885 16.0625 26.751L12.6875 27.8135L13.8125 24.5635C12.75 23.0635 12.125 21.251 12.125 19.376C12.125 14.501 16.0625 10.5635 20.9375 10.5635C25.8125 10.5635 29.6875 14.501 29.6875 19.376C29.6875 24.251 25.75 28.1885 20.875 28.1885ZM20.875 8.81348C15.0625 8.81348 10.3125 13.5635 10.3125 19.376C10.3125 21.3135 10.8125 23.1885 11.8125 24.8135L9.875 30.501L15.75 28.626C17.3125 29.501 19.0625 29.9385 20.875 29.9385C26.6875 29.9385 31.4375 25.1885 31.4375 19.376C31.4375 13.5635 26.75 8.81348 20.875 8.81348Z"
+                                    fill="white"></path>
+                            </g>
+                            <defs>
+                                <clippath id="clip0_191243_648">
+                                    <rect width="40" height="40" fill="white"></rect>
+                                </clippath>
+                            </defs>
+                        </svg></a>
+                    <a href="https://vk.com/im?media=&sel=-15266223" target="_blank" class="footer__vk"><svg width="40"
+                            height="40" viewBox="0 0 25 25" fill="#0077FF" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.5 0C5.59815 0 0 5.59815 0 12.5C0 19.4018 5.59815 25 12.5 25C19.4018 25 25 19.4018 25 12.5C25 5.59815 19.4018 0 12.5 0ZM18.8394 13.8548C19.4274 14.4172 20.0409 14.954 20.5521 15.593C20.7822 15.8742 21.0122 16.1554 21.1656 16.4877C21.3957 16.9478 21.1912 17.4591 20.7822 17.4846H18.226C17.5613 17.5358 17.0501 17.2801 16.59 16.82C16.2321 16.4622 15.8998 16.0787 15.5675 15.6953C15.4397 15.5419 15.2863 15.3885 15.1073 15.2863C14.7495 15.0562 14.4427 15.1329 14.2638 15.4908C14.0593 15.8742 14.0082 16.2832 13.9826 16.6922C13.957 17.3057 13.7781 17.4591 13.1646 17.4846C11.8609 17.5358 10.6339 17.3568 9.50919 16.6922C8.51226 16.1043 7.71983 15.3118 7.05521 14.3916C5.72597 12.6022 4.72903 10.6339 3.80879 8.61451C3.60429 8.15439 3.75767 7.92433 4.26891 7.89876C5.11247 7.8732 5.93046 7.8732 6.77402 7.89876C7.10633 7.89876 7.33639 8.10326 7.46421 8.41001C7.92433 9.50919 8.46114 10.5828 9.15132 11.5542C9.33026 11.8098 9.53475 12.0654 9.79038 12.2699C10.0971 12.4744 10.3016 12.3977 10.455 12.0654C10.5317 11.8609 10.5828 11.6309 10.6084 11.4008C10.6851 10.6339 10.6851 9.86707 10.5572 9.10019C10.4806 8.58895 10.2249 8.2822 9.73925 8.17995C9.48363 8.12883 9.53476 8.05214 9.637 7.89876C9.8415 7.6687 10.046 7.51533 10.4294 7.51533H13.318C13.7781 7.61758 13.8804 7.79652 13.9315 8.25664V11.4775C13.9315 11.6564 14.0082 12.1932 14.3405 12.2955C14.5961 12.3722 14.775 12.1677 14.9284 12.0143C15.6186 11.273 16.1043 10.4039 16.5644 9.50919C16.7689 9.10019 16.9223 8.6912 17.1012 8.2822C17.229 7.97545 17.408 7.82208 17.7658 7.82208H20.5521C20.6288 7.82208 20.7055 7.82208 20.8078 7.84764C21.2679 7.92433 21.3957 8.12883 21.2679 8.58895C21.0378 9.30469 20.6033 9.91819 20.1687 10.5061C19.7086 11.1452 19.1973 11.7587 18.7372 12.4233C18.2771 13.0368 18.3026 13.3435 18.8394 13.8548Z">
+                            </path>
+                        </svg></a>
+                    <div class="header__connection footer__connection flex">
+                        <a href="tel:+79936369493" class="header__phone">+7 (993) 636-94-93</a>
+                        <span class="header__schedule footer__schedule">пн-пт 09:00-18:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__wrapper footer__wrapper--tablet flex">
+                <div class="footer__inner flex">
+                    <a href="index.html" class="footer__logo">
+                        <img src="../img/Logo.png" alt="Логотип Кондейкин">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="list-reset footer__nav--list">
+                            <li class="footer__nav--item">
+                                <a href="../lists/catalogue.html" class="footer__nav--link">Каталог</a>
+                            </li>
+                            <li class="footer__nav--item">
+                                <a href="../lists/price.html" class="footer__nav--link">Услуги</a>
+                            </li>
+                            <li class="footer__nav--item">
+                                <a href="../lists/service.html" class="footer__nav--link">Сервис</a>
+                            </li>
+                            <li class="footer__nav--item">
+                                <a href="../lists/jobs.html" class="footer__nav--link">Наши работы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__connect">
+                        <h3 class="footer__subtitle">
+                            Связаться в один клик
+                        </h3>
+                        <a href="https://api.whatsapp.com/send?phone=79936369493" target="_blank"
+                            class="footer__whatsapp"><svg width="40" height="40" viewbox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_191243_648)">
+                                    <path
+                                        d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
+                                        fill="#30BF39"></path>
+                                    <path
+                                        d="M25.875 21.751C25.625 21.626 24.3125 20.876 24.0625 20.8135C23.8125 20.6885 23.625 20.6885 23.4375 20.9385C23.25 21.1885 22.6875 21.8135 22.5625 21.9385C22.375 22.126 22.25 22.126 22 22.001C21.75 21.876 20.875 21.5635 19.875 20.5635C19.125 19.8135 18.5625 18.9385 18.4375 18.626C18.3125 18.376 18.4375 18.1885 18.5625 18.0635C18.6875 17.9385 18.8125 17.751 19 17.626C19.1875 17.501 19.1875 17.376 19.3125 17.1885C19.4375 17.001 19.375 16.876 19.3125 16.6885C19.25 16.501 18.75 15.1885 18.5625 14.626C18.375 14.0635 18.125 14.1885 18 14.126C17.8125 14.126 17.6875 14.0635 17.5 14.0635C17.25 14.0635 16.9375 14.1885 16.75 14.376C16.5 14.626 15.75 15.251 15.75 16.5635C15.75 17.876 16.625 19.251 16.75 19.376C16.875 19.5635 18.5 22.4385 21.1875 23.626C23.875 24.8135 23.875 24.4385 24.375 24.4385C24.875 24.4385 26 23.8135 26.25 23.251C26.5 22.626 26.5 22.0635 26.4375 22.001C26.3125 22.001 26.125 21.9385 25.875 21.751ZM20.875 28.1885C19.125 28.1885 17.5 27.6885 16.0625 26.751L12.6875 27.8135L13.8125 24.5635C12.75 23.0635 12.125 21.251 12.125 19.376C12.125 14.501 16.0625 10.5635 20.9375 10.5635C25.8125 10.5635 29.6875 14.501 29.6875 19.376C29.6875 24.251 25.75 28.1885 20.875 28.1885ZM20.875 8.81348C15.0625 8.81348 10.3125 13.5635 10.3125 19.376C10.3125 21.3135 10.8125 23.1885 11.8125 24.8135L9.875 30.501L15.75 28.626C17.3125 29.501 19.0625 29.9385 20.875 29.9385C26.6875 29.9385 31.4375 25.1885 31.4375 19.376C31.4375 13.5635 26.75 8.81348 20.875 8.81348Z"
+                                        fill="white"></path>
+                                </g>
+                                <defs>
+                                    <clippath id="clip0_191243_648">
+                                        <rect width="40" height="40" fill="white"></rect>
+                                    </clippath>
+                                </defs>
+                            </svg></a>
+                        <a href="https://vk.com/im?media=&sel=-15266223" target="_blank" class="footer__vk"><svg
+                                width="40" height="40" viewBox="0 0 25 25" fill="#0077FF"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.5 0C5.59815 0 0 5.59815 0 12.5C0 19.4018 5.59815 25 12.5 25C19.4018 25 25 19.4018 25 12.5C25 5.59815 19.4018 0 12.5 0ZM18.8394 13.8548C19.4274 14.4172 20.0409 14.954 20.5521 15.593C20.7822 15.8742 21.0122 16.1554 21.1656 16.4877C21.3957 16.9478 21.1912 17.4591 20.7822 17.4846H18.226C17.5613 17.5358 17.0501 17.2801 16.59 16.82C16.2321 16.4622 15.8998 16.0787 15.5675 15.6953C15.4397 15.5419 15.2863 15.3885 15.1073 15.2863C14.7495 15.0562 14.4427 15.1329 14.2638 15.4908C14.0593 15.8742 14.0082 16.2832 13.9826 16.6922C13.957 17.3057 13.7781 17.4591 13.1646 17.4846C11.8609 17.5358 10.6339 17.3568 9.50919 16.6922C8.51226 16.1043 7.71983 15.3118 7.05521 14.3916C5.72597 12.6022 4.72903 10.6339 3.80879 8.61451C3.60429 8.15439 3.75767 7.92433 4.26891 7.89876C5.11247 7.8732 5.93046 7.8732 6.77402 7.89876C7.10633 7.89876 7.33639 8.10326 7.46421 8.41001C7.92433 9.50919 8.46114 10.5828 9.15132 11.5542C9.33026 11.8098 9.53475 12.0654 9.79038 12.2699C10.0971 12.4744 10.3016 12.3977 10.455 12.0654C10.5317 11.8609 10.5828 11.6309 10.6084 11.4008C10.6851 10.6339 10.6851 9.86707 10.5572 9.10019C10.4806 8.58895 10.2249 8.2822 9.73925 8.17995C9.48363 8.12883 9.53476 8.05214 9.637 7.89876C9.8415 7.6687 10.046 7.51533 10.4294 7.51533H13.318C13.7781 7.61758 13.8804 7.79652 13.9315 8.25664V11.4775C13.9315 11.6564 14.0082 12.1932 14.3405 12.2955C14.5961 12.3722 14.775 12.1677 14.9284 12.0143C15.6186 11.273 16.1043 10.4039 16.5644 9.50919C16.7689 9.10019 16.9223 8.6912 17.1012 8.2822C17.229 7.97545 17.408 7.82208 17.7658 7.82208H20.5521C20.6288 7.82208 20.7055 7.82208 20.8078 7.84764C21.2679 7.92433 21.3957 8.12883 21.2679 8.58895C21.0378 9.30469 20.6033 9.91819 20.1687 10.5061C19.7086 11.1452 19.1973 11.7587 18.7372 12.4233C18.2771 13.0368 18.3026 13.3435 18.8394 13.8548Z">
+                                </path>
+                            </svg></a>
+                        <div class="header__connection footer__connection flex">
+                            <a href="tel:+79936369493" class="header__phone">+7 (993) 636-94-93</a>
+                            <span class="header__schedule footer__schedule">пн-пт 09:00-18:00</span>
+                        </div>
+                    </div>
+                </div>
+                <form action="#" method="POST" enctype="multipart/form-data" class="footer__form flex"
+                    id="footer-form--tablet">
+                    <label for="name" class="footer__label">
+                        <input class="footer__input footer-name--tablet" type="text" name="name"
+                            placeholder="Введите Ваше имя*">
+                    </label>
+                    <label for="tel" class="footer__label">
+                        <input class="footer__input footer-tel--tablet" type="tel" name="tel"
+                            placeholder="Введите Ваш телефон*">
+                    </label>
+                    <label for="mail" class="footer__label">
+                        <input class="footer__input footer-mail--tablet" type="text" name="mail"
+                            placeholder="Введите Ваш email*">
+                    </label>
+                    <label for="text" class="hero__label">
+                        <textarea name="text" cols="10" rows="2" class="hero__input footer-text--tablet" type="text"
+                            data-validate-field="text" placeholder="Введите интересующий Вас вопрос*"></textarea>
+                    </label>
+                    <div class="footer__agreement flex">
+                        <button class="btn-reset footer__btn" type="submit">Заказать обратный звонок</button>
+                        <span>Нажимая на кнопку «Заказать обратный звонок», вы даёте согласие на обработку<br> <a
+                                href="http://www.kremlin.ru/acts/bank/24154">персональных
+                                данных</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer__info flex">
+            <span>Информация и цены представленные на сайте несут ознакомительный характер и не являются договором
+                публичной оферты.</span>
+        </div>
+    </footer>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script defer src="../js/burger.js"></script>
+    <script defer src="../js/inputmask.min.js"></script>
+    <script defer src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script defer type="module" src="../js/catalogue.js"></script>
+
+</body>
+
+</html>
